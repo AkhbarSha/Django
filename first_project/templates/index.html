@@ -1,0 +1,15 @@
+<ol>
+{% for f in fruit_list %}
+<li> {{ f }} </li>
+{% endfor %}
+</ol>
+<h3>Programs offered</h3>
+ 
+ <table border="1">
+   {% for r in program_rows %}
+     <tr>
+       <td>{{ r.title }}</td>
+       <td>{{ r.branch }}</td>
+     </tr>
+   {% endfor %}
+ </table>
